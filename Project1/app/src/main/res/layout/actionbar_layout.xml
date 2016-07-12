@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.example.anhlk.project1.MainActivity"
+        android:id="@+id/RLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8ab442">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:src="@drawable/buttonback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/andG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="andG"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/btn_forgot"
+            android:src="@drawable/buttonforgot"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/btn_back" />
+    </RelativeLayout>

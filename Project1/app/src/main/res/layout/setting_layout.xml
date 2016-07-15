@@ -8,7 +8,7 @@
     tools:context="com.example.anhlk.project1.MainActivity">
 
     <Button
-        android:id="@+id/btn_back"
+        android:id="@+id/btn_nav_menu"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
@@ -18,31 +18,35 @@
         android:layout_marginLeft="7dp"
         android:layout_marginStart="7dp"
         android:layout_marginTop="7dp"
-        android:background="@drawable/background_btnback" />
+        android:background="@drawable/ic_btn_navmenu" />
 
     <TextView
-        android:id="@+id/txt_andG"
+        android:id="@+id/txt_recent_report"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:gravity="center"
-        android:text="@string/andG"
+        android:text="@string/action_settings"
         android:textColor="#ffffff"
         android:textSize="15sp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btn_forgot"
         android:layout_width="70dp"
         android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/btn_back"
-        android:layout_centerVertical="true"
-        android:background="@drawable/background_btnforgot"
-        android:src="@drawable/buttonforgot"
-        android:text="@string/forgot"
-        android:textColor="@android:color/white"
-        android:textStyle="bold" />
+        android:layout_alignParentEnd="true"
+        android:text="@string/logout"
+        android:textStyle="bold"
+        android:saveEnabled="false"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:background="@drawable/background_btn_send"
+        android:textColor="@android:color/white"/>
+
 </RelativeLayout>

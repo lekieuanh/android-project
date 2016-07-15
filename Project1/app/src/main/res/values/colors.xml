@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorBorderBtn">#d3d3d3</color>
+    <color name="endcolor">#f2f2f2</color>
+    <color name="startcolor">#c5c5c5</color>
+    <color name="btn_fb">#d9d9d9</color>
+    <color name="btn_buy_points_start">#739233</color>
+    <color name="btn_buy_points_end">#a0c84b</color>
 </resources>

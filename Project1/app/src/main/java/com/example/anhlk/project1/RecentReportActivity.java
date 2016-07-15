@@ -1,5 +1,6 @@
 package com.example.anhlk.project1;
 
+import android.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,10 +13,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
 
 public class RecentReportActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
+    private DrawerLayout mDrawer;
+    private NavigationView mNavigationView;
+    RelativeLayout recent_report_layout;
+    RecentReportFragment recentReportFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,24 +34,20 @@ public class RecentReportActivity extends AppCompatActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().hide();
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+                this, mDrawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        mDrawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        mNavigationView = (NavigationView) findViewById(R.id.nav_view);
+        mNavigationView.setNavigationItemSelectedListener(this);
+        recent_report_layout = (RelativeLayout) findViewById(R.id.recent_report_layout);
+        recent_report_layout.setOnClickListener(this);
+
+        recentReportFragment = new RecentReportFragment();
     }
 
     @Override
@@ -80,6 +82,18 @@ public class RecentReportActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+    public void openDrawer() {
+        mDrawer.openDrawer(mNavigationView);
+    }
+
+    public void closeDrawer() {
+        mDrawer.closeDrawer(mNavigationView);
+    }
+
+    public boolean isDrawerOpened() {
+        return mDrawer.isDrawerOpen(mNavigationView);
+    }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -103,5 +117,16 @@ public class RecentReportActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.recent_report_layout:
+                    getFragmentManager()
+                            .beginTransaction()
+                            .replace(R.id.main_layout, new RecentReportFragment())
+                            .commit();
+        }
     }
 }

@@ -1,374 +1,434 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="5dp">
-        <ImageView
-            android:id="@+id/bg_menu_recent_report"
-            android:src="@drawable/bg_menu_recent_report"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Recent Report"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:background="#e0dfdc"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_meetpeople"
-            android:src="@drawable/ic_menu_meetpeople"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Search Friends"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_meetpeople"
-            android:layout_toEndOf="@+id/ic_menu_meetpeople" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_buzz"
-            android:src="@drawable/ic_menu_buzz"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Check the timeline"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_buzz"
-            android:layout_toEndOf="@+id/ic_menu_buzz" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_lookatme"
-            android:src="@drawable/ic_lookatme"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Auction"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_lookatme"
-            android:layout_toEndOf="@+id/ic_lookatme" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_shaketochat"
-            android:src="@drawable/ic_menu_shaketochat"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Shake to Chat"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_shaketochat"
-            android:layout_toEndOf="@+id/ic_menu_shaketochat" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:background="#e0dfdc"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_myprofile"
-            android:src="@drawable/ic_menu_myprofile"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Profile"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_myprofile"
-            android:layout_toEndOf="@+id/ic_menu_myprofile" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_connection"
-            android:src="@drawable/ic_menu_connections"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="My Friends"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_connection"
-            android:layout_toEndOf="@+id/ic_menu_connection" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_mychat"
-            android:src="@drawable/ic_menu_mychat"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chats"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_mychat"
-            android:layout_toEndOf="@+id/ic_menu_mychat" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_notification"
-            android:src="@drawable/ic_menu_notification"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-              android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Notifications"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_notification"
-            android:layout_toEndOf="@+id/ic_menu_notification" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_point"
-            android:src="@drawable/ic_menu_point"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Points"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_point"
-            android:layout_toEndOf="@+id/ic_menu_point" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height= "1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_setting"
-            android:src="@drawable/ic_menu_setting"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Setting"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_setting"
-            android:layout_toEndOf="@+id/ic_menu_setting" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:background="#e0dfdc"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_item_offline_freepage"
-            android:src="@drawable/ic_menu_item_offline"
-            android:layout_width="40dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="free page"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_item_offline_freepage"
-            android:layout_toEndOf="@+id/ic_menu_item_offline_freepage" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_item_offline_js_interface"
-            android:src="@drawable/ic_menu_item_offline"
-            android:layout_width="40dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="JavaScript Interface"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_item_offline_js_interface"
-            android:layout_toEndOf="@+id/ic_menu_item_offline_js_interface" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp">
-        <ImageView
-            android:id="@+id/ic_menu_item_offline_image"
-            android:src="@drawable/ic_menu_item_offline"
-            android:layout_width="40dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="画像"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/ic_menu_item_offline_image"
-            android:layout_toEndOf="@+id/ic_menu_item_offline_image" />
-    </RelativeLayout>
-    <View
+        android:background="#ffffff"
+        android:orientation="vertical">
 
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/background"/>
-</LinearLayout>
+        <RelativeLayout
+            android:id="@+id/recent_report_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/bg_menu_recent_report"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/bg_menu_recent_report" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/recent_report" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#e0dfdc" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:id="@+id/search_friend_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_meetpeople"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_meetpeople" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_meetpeople"
+                android:layout_toRightOf="@+id/ic_menu_meetpeople"
+                android:text="@string/search_friends" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:id="@+id/check_timeline_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_buzz"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_buzz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_buzz"
+                android:layout_toRightOf="@+id/ic_menu_buzz"
+                android:text="@string/check_timeline" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:id="@+id/auction_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_lookatme"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_lookatme" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_lookatme"
+                android:layout_toRightOf="@+id/ic_lookatme"
+                android:text="@string/auction" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:id="@+id/shake_to_chat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_shaketochat"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_shaketochat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_shaketochat"
+                android:layout_toRightOf="@+id/ic_menu_shaketochat"
+                android:text="@string/shake_to_chat" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#e0dfdc" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_myprofile"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_myprofile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_myprofile"
+                android:layout_toRightOf="@+id/ic_menu_myprofile"
+                android:text="@string/profile" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_connection"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_connections" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_connection"
+                android:layout_toRightOf="@+id/ic_menu_connection"
+                android:text="@string/my_friend" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_mychat"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_mychat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_mychat"
+                android:layout_toRightOf="@+id/ic_menu_mychat"
+                android:text="@string/chats" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_notification"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_notification" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_notification"
+                android:layout_toRightOf="@+id/ic_menu_notification"
+                android:text="@string/notification" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_point"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_point" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_point"
+                android:layout_toRightOf="@+id/ic_menu_point"
+                android:text="@string/points" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_setting"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_setting"
+                android:layout_toRightOf="@+id/ic_menu_setting"
+                android:text="@string/setting" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#e0dfdc" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_item_offline_freepage"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_item_offline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_item_offline_freepage"
+                android:layout_toRightOf="@+id/ic_menu_item_offline_freepage"
+                android:text="@string/free_page" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_item_offline_js_interface"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_item_offline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_item_offline_js_interface"
+                android:layout_toRightOf="@+id/ic_menu_item_offline_js_interface"
+                android:text="@string/js_interface" />
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@drawable/background" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ic_menu_item_offline_image"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_item_offline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_menu_item_offline_image"
+                android:layout_toRightOf="@+id/ic_menu_item_offline_image"
+                android:text="@string/image" />
+        </RelativeLayout>
+    </LinearLayout>
 </ScrollView>
